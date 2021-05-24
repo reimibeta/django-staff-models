@@ -1,7 +1,7 @@
 from django.contrib import admin
 from django_admin_listfilter_dropdown.filters import DropdownFilter, RelatedDropdownFilter
 
-from pcr_models.staffs.staffs.staff_models.staff_address import StaffAddress
+from staff_models.staffs.staff_models.staff_address import StaffAddress
 
 
 class StaffAddressAdmin(admin.ModelAdmin):

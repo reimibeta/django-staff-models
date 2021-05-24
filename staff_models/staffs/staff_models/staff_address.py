@@ -1,6 +1,6 @@
 from django.db import models
 
-from pcr_models.staffs.staffs.staff_models.staff import Staff
+from staff_models.staffs.staff_models.staff import Staff
 
 
 class StaffAddress(models.Model):

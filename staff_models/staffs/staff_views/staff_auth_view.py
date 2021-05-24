@@ -2,7 +2,7 @@ from rest_framework import status
 from rest_framework.response import Response
 from rest_framework_simplejwt.views import TokenVerifyView, TokenObtainPairView
 
-from pcr_models.staffs.staffs.staff_serializers.staff_auth_serializers import StaffTokenObtainPairSerializer
+from staff_models.staffs.staff_serializers.staff_auth_serializers import StaffTokenObtainPairSerializer
 
 
 class StaffTokenVerifyViewSet(TokenVerifyView):

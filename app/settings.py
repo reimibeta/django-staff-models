@@ -37,6 +37,11 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    # django rest-framework
+    'rest_framework',
+    
+    # Filter
+    'django_admin_listfilter_dropdown',
 ]
 
 MIDDLEWARE = [

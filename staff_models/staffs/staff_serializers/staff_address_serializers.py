@@ -2,7 +2,7 @@ from rest_flex_fields import FlexFieldsModelSerializer
 
 
 # product size serializer
-from pcr_models.staffs.staffs.staff_models.staff_address import StaffAddress
+from staff_models.staffs.staff_models.staff_address import StaffAddress
 
 
 class StaffAddressSerializer(FlexFieldsModelSerializer):

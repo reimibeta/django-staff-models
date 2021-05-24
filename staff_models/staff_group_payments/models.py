@@ -1,3 +1,3 @@
 from django.db import models
 
-from .staff_group_payment_models.staff_worker_payment import StaffWorkerPayment
+from staff_models.staff_group_payments.staff_group_payment_models.staff_worker_payment import StaffWorkerPayment

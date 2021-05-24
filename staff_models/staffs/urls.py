@@ -3,8 +3,8 @@ from django.urls import path, include
 from rest_framework_simplejwt.views import TokenObtainPairView, TokenRefreshView, TokenVerifyView
 from rest_framework import routers
 
-from pcr_models.staffs.staffs import views
-from pcr_models.staffs.staffs.staff_views.staff_auth_view import StaffTokenVerifyViewSet
+from staff_models.staffs import views
+from staff_models.staffs.staff_views.staff_auth_view import StaffTokenVerifyViewSet
 
 router = routers.DefaultRouter()
 router.register('staff-phone', views.StaffPhoneViewSet)

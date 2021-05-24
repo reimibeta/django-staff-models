@@ -1,7 +1,7 @@
 from django.contrib import admin
 from django_admin_listfilter_dropdown.filters import DropdownFilter, RelatedDropdownFilter
 
-from pcr_models.staffs.staff_groups.staff_group_models.staff_seller import StaffSeller
+from staff_models.staff_groups.staff_group_models.staff_seller import StaffSeller
 
 
 class StaffSellerAdmin(admin.ModelAdmin):

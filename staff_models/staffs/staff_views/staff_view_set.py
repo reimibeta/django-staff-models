@@ -1,8 +1,8 @@
 from rest_framework import viewsets
 from rest_framework_utils.pagination import StandardResultsSetPagination
 
-from pcr_models.staffs.staffs.staff_models.staff import Staff
-from pcr_models.staffs.staffs.staff_serializers.staff_serializers import StaffSerializer
+from staff_models.staffs.staff_models.staff import Staff
+from staff_models.staffs.staff_serializers.staff_serializers import StaffSerializer
 
 
 class StaffViewSet(viewsets.ModelViewSet):

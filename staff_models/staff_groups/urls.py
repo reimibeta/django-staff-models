@@ -3,7 +3,7 @@ from django.urls import path, include
 
 from rest_framework import routers
 
-from pcr_models.staffs.staff_groups import views
+from staff_models.staff_groups import views
 
 router = routers.DefaultRouter()
 router.register('staff-manager', views.StaffManagerViewSet)

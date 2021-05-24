@@ -1,10 +1,10 @@
 from django.contrib import admin
 from django_admin_listfilter_dropdown.filters import DropdownFilter, RelatedDropdownFilter
 
-from pcr_models.staffs.staffs.staff_admins.staff_address_admin import StaffAddressAdminInline
-from pcr_models.staffs.staffs.staff_admins.staff_phone_admin import StaffPhoneAdminInline
-from pcr_models.staffs.staffs.staff_models.staff import Staff
-from pcr_models.staffs.staffs.staff_models.staff_phone import StaffPhone
+from staff_models.staffs.staff_admins.staff_address_admin import StaffAddressAdminInline
+from staff_models.staffs.staff_admins.staff_phone_admin import StaffPhoneAdminInline
+from staff_models.staffs.staff_models.staff import Staff
+from staff_models.staffs.staff_models.staff_phone import StaffPhone
 
 
 class StaffAdmin(admin.ModelAdmin):

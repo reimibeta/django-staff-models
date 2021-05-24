@@ -1,9 +1,9 @@
 from rest_flex_fields import FlexFieldsModelSerializer
 from rest_framework import serializers
 
-from pcr_models.staffs.staffs.staff_models.staff import Staff
-from pcr_models.staffs.staffs.staff_serializers.staff_address_serializers import StaffAddressSerializer
-from pcr_models.staffs.staffs.staff_serializers.staff_phone_serializers import StaffPhoneSerializer
+from staff_models.staffs.staff_models.staff import Staff
+from staff_models.staffs.staff_serializers.staff_address_serializers import StaffAddressSerializer
+from staff_models.staffs.staff_serializers.staff_phone_serializers import StaffPhoneSerializer
 
 
 class StaffSerializer(FlexFieldsModelSerializer):

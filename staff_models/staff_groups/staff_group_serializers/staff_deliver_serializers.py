@@ -1,7 +1,7 @@
 from rest_flex_fields import FlexFieldsModelSerializer
 
-from pcr_models.staffs.staff_groups.staff_group_models.staff_deliver import StaffDeliver
-from pcr_models.staffs.staffs.staff_serializers.staff_serializers import StaffSerializer
+from staff_models.staff_groups.staff_group_models.staff_deliver import StaffDeliver
+from staff_models.staffs.staff_serializers.staff_serializers import StaffSerializer
 
 
 class StaffDeliverSerializer(FlexFieldsModelSerializer):

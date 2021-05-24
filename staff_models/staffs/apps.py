@@ -2,5 +2,5 @@ from django.apps import AppConfig
 
 
 class StaffsConfig(AppConfig):
-    name = 'pcr_models.staffs.staffs'
+    name = 'staff_models.staffs'
     verbose_name = 'Staffs'

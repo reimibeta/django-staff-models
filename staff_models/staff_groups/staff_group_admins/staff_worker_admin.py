@@ -1,8 +1,8 @@
 from django.contrib import admin
 from django_admin_listfilter_dropdown.filters import RelatedDropdownFilter, DropdownFilter
 
-from pcr_models.staffs.staff_groups.staff_group_models.staff_worker import StaffWorker
-from pcr_models.staffs.staffs.staff_models.staff_phone import StaffPhone
+from staff_models.staff_groups.staff_group_models.staff_worker import StaffWorker
+from staff_models.staffs.staff_models.staff_phone import StaffPhone
 
 
 class StaffWorkerAdmin(admin.ModelAdmin):
