@@ -13,5 +13,6 @@ setuptools.setup(
     name='staff_models',
     version='1.0.0',
     packages=setuptools.find_packages(),
+    install_requires=['pillow']
     # scripts=['manage.py']
 )
