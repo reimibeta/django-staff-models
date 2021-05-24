@@ -39,7 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     # django rest-framework
     'rest_framework',
-    
+    'staff_models.staffs.apps.StaffConfig',
+    'staff_models.staff_groups.apps.StaffGroupConfig',
     # Filter
     'django_admin_listfilter_dropdown',
 ]

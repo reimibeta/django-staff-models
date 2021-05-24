@@ -1,6 +1,6 @@
 from django.apps import AppConfig
 
 
-class StaffsConfig(AppConfig):
+class StaffConfig(AppConfig):
     name = 'staff_models.staffs'
     verbose_name = 'Staffs'

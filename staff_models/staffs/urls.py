@@ -4,7 +4,7 @@ from rest_framework_simplejwt.views import TokenObtainPairView, TokenRefreshView
 from rest_framework import routers
 
 from staff_models.staffs import views
-from staff_models.staffs.staff_views.staff_auth_view import StaffTokenVerifyViewSet
+from staff_models.staffs.class_views.staff_auth_view import StaffTokenVerifyViewSet
 
 router = routers.DefaultRouter()
 router.register('staff-phone', views.StaffPhoneViewSet)
