@@ -1,0 +1,106 @@
+{% extends "admin/change_list.html" %}
+{% load static %}
+
+{% block extrahead %}
+{{ block.super }}
+<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<!-- <link rel="stylesheet" href="/resources/demos/style.css"> -->
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.css"/>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.bundle.min.js"></script>
+<script>
+$(document).ready(function(){
+
+  function dataSet(data, label, color){
+    return {
+      data: data,
+      // backgroundColor: "#CB7800",
+      // borderColor: "#00a53a",
+      label: label,
+      fill: false,
+      lineTension: 0.1,
+      backgroundColor: color,
+      borderColor: color,
+      borderCapStyle: 'butt',
+      borderDash: [],
+      borderDashOffset: 0.0,
+      borderJoinStyle: 'miter',
+      pointBorderColor: color,
+      pointBackgroundColor: "#fff",
+      pointBorderWidth: 1,
+      pointHoverRadius: 5,
+      pointHoverBackgroundColor: color,
+      pointHoverBorderColor: "#eef0f2",
+      pointHoverBorderWidth: 2,
+      pointRadius: 1,
+      pointHitRadius: 10,
+    };
+  }
+
+  const amount = [{% for ne in data %}{{ ne.amount }},{% endfor %}];
+  const ctx = $('#myChart');//.getContext('2d');
+  const chart = new Chart(ctx, {
+    // responsive: true,
+    type: 'line',
+    data: {
+      labels: [
+        {% for d in data %}'{{ d.date|date:"F" }}',{% endfor %}
+      ],
+      datasets: [
+        dataSet(amount, "Amount worker payment Analytics $", "#00a53a"),
+      ]
+    },
+    options: {
+      responsive: true,
+      scales: {
+        yAxes: [
+          {
+            ticks: {
+              beginAtZero: true,
+            },
+          },
+        ],
+      },
+    },
+  });
+
+});
+
+</script>
+<script>
+  $(function() {
+    $("#date_from").datepicker({'dateFormat': 'yy-mm-dd'});
+    $("#date_from").datepicker('setDate', new Date('2020-05-03')); 
+
+    $("#date_to").datepicker({
+      dateFormat: 'yy-mm-dd',
+      onSelect: function(date) {
+          alert(date);
+      },
+    });
+    $("#date_to").datepicker('setDate', new Date('2020-05-17'));
+    // check css
+    if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+        // mobile screen
+    } else {
+        $("#containerChart").css("margin-bottom","50px");
+    }
+  });
+
+</script>
+{% endblock %}
+
+{% block content %}
+<!-- Render our chart -->
+<div id="containerChart" style="width: 100%;">
+    <!-- <p>Date From: <input type="text" id="date_from">&nbsp;
+    Date To: <input type="text" id="date_to"></p> -->
+    <canvas style="margin-bottom: 30px; width: 60%; height: 50%;" id="myChart"></canvas>
+</div>
+
+<!-- <button id="reload" style="margin: 1rem 0">Reload chart data</button> -->
+<!-- Render the rest of the ChangeList view -->
+{{ block.super }}
+{% endblock %}
