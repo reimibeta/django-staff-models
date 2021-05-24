@@ -11,12 +11,12 @@ import setuptools
 
 setuptools.setup(
     name='staff_models',
-    version='1.0.1',
+    version='1.0.2',
     packages=setuptools.find_packages(),
-    install_requires=[
-        'image-utils @ git+https://github.com/reimibeta/django-image-utils.git',
-        'datetime-utils @ git+https://github.com/reimibeta/django-datetime-utils.git',
-        'html-render-utils @ git+https://github.com/reimibeta/django-html-render-utils.git',
-    ]
+    # install_requires=[
+    #     'image-utils @ git+https://github.com/reimibeta/django-image-utils.git',
+    #     'datetime-utils @ git+https://github.com/reimibeta/django-datetime-utils.git',
+    #     'html-render-utils @ git+https://github.com/reimibeta/django-html-render-utils.git',
+    # ]
     # scripts=['manage.py']
 )
