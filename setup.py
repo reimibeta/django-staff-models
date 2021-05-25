@@ -11,7 +11,7 @@ import setuptools
 
 setuptools.setup(
     name='staff_models',
-    version='1.0.3',
+    version='1.0.4',
     packages=setuptools.find_packages(),
     install_requires=[
         'image-utils @ git+https://github.com/reimibeta/django-image-utils.git',
