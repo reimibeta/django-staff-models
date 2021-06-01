@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'rest_framework',
     'staff_models.staffs.apps.StaffConfig',
     'staff_models.staff_groups.apps.StaffGroupConfig',
+    'staff_models.staff_managements.staff_group_payments.apps.StaffGroupPaymentsConfig',
     # Filter
     'django_admin_listfilter_dropdown',
 ]

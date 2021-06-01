@@ -1,3 +1,0 @@
-from django.contrib import admin
-
-from staff_models.staff_group_payments.class_admins.staff_worker_payment_admin import StaffWorkerPaymentAdmin
