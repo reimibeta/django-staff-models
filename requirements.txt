@@ -10,5 +10,5 @@ image-utils @ git+https://github.com/reimibeta/django-image-utils.git
 mysqlclient==2.0.3
 Pillow==8.2.0
 rest-framework-utils @ git+https://github.com/reimibeta/django-rest-framework-utils.git
-user-models @ git+https://github.com/reimibeta/django-user-models.git
-wallet-models @ git+https://github.com/reimibeta/django-wallet-models.git
+# user-models @ git+https://github.com/reimibeta/django-user-models.git
+# wallet-models @ git+https://github.com/reimibeta/django-wallet-models.git
