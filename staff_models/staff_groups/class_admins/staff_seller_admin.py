@@ -2,6 +2,7 @@ from django.contrib import admin
 from django_admin_listfilter_dropdown.filters import DropdownFilter, RelatedDropdownFilter
 
 from staff_models.staff_groups.class_models.staff_seller import StaffSeller
+from staff_models.staffs.class_models.staff import Staff
 
 
 class StaffSellerAdmin(admin.ModelAdmin):
@@ -17,6 +18,18 @@ class StaffSellerAdmin(admin.ModelAdmin):
         # for related fields
         ('staff', RelatedDropdownFilter),
     )
+
+    def formfield_for_foreignkey(self, db_field, request, **kwargs):
+        # stock
+        if db_field.name == "staff":
+            try:
+                # parent_id = request.resolver_match.args[0]
+                kwargs["queryset"] = Staff.objects.filter(
+                    is_active=True
+                )
+            except IndexError:
+                pass
+        return super().formfield_for_foreignkey(db_field, request, **kwargs)
 
 
 admin.site.register(StaffSeller, StaffSellerAdmin)
