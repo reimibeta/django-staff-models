@@ -22,5 +22,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     # Staff Api
     path('api/staffs/', include('staff_models.staffs.urls')),
-    # path('api/staff-groups/', include('staff_models.staff_groups.urls')),
+    path('api/staff-groups/', include('staff_models.staff_groups.urls')),
 ]

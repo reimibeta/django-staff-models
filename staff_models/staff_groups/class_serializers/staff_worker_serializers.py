@@ -12,7 +12,7 @@ class StaffWorkerSerializer(FlexFieldsModelSerializer):
             'url',
             'staff',
             'assigned_date',
-            'removed_date',
+            # 'removed_date',
             'is_active'
         ]
         expandable_fields = {
