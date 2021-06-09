@@ -9,4 +9,4 @@ html-render-utils @ git+https://github.com/reimibeta/django-html-render-utils.gi
 image-utils @ git+https://github.com/reimibeta/django-image-utils.git@145c80c2a8de0ac59c648671e3242578b6efbc7d
 mysqlclient==2.0.3
 Pillow==8.2.0
-rest-framework-utils @ git+https://github.com/reimibeta/django-rest-framework-utils.git@b7ec67b0138d1a8277f3418edadc5451aa7a41c4
+rest-framework-utils @ git+https://github.com/reimibeta/django-rest-framework-utils.git@764007b810f1c3609cca6c0e146da746531aa929
