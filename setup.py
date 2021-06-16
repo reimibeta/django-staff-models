@@ -11,6 +11,6 @@ import setuptools
 
 setuptools.setup(
     name='staff_models',
-    version='1.0.9',
+    version='1.1.0',
     packages=setuptools.find_packages(),
 )

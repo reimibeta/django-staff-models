@@ -18,7 +18,7 @@ class Migration(migrations.Migration):
             name='StaffWorker',
             fields=[
                 ('id', models.AutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('assigned_date', models.DateField(default=datetime_utils.date_time.DateTime.datenow)),
+                ('assigned_date', models.DateField(default=datetime_utils.date_time.DateTime('date').now())),
                 ('is_active', models.BooleanField(default=True)),
                 ('staff', models.OneToOneField(on_delete=django.db.models.deletion.CASCADE, to='staffs.staff')),
             ],
@@ -27,7 +27,7 @@ class Migration(migrations.Migration):
             name='StaffSeller',
             fields=[
                 ('id', models.AutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('assigned_date', models.DateField(default=datetime_utils.date_time.DateTime.datenow)),
+                ('assigned_date', models.DateField(default=datetime_utils.date_time.DateTime('date').now())),
                 ('is_active', models.BooleanField(default=True)),
                 ('staff', models.OneToOneField(on_delete=django.db.models.deletion.CASCADE, to='staffs.staff')),
             ],
@@ -36,7 +36,7 @@ class Migration(migrations.Migration):
             name='StaffManager',
             fields=[
                 ('id', models.AutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('assigned_date', models.DateField(default=datetime_utils.date_time.DateTime.datenow)),
+                ('assigned_date', models.DateField(default=datetime_utils.date_time.DateTime('date').now())),
                 ('is_active', models.BooleanField(default=True)),
                 ('staff', models.OneToOneField(on_delete=django.db.models.deletion.CASCADE, to='staffs.staff')),
             ],
@@ -45,7 +45,7 @@ class Migration(migrations.Migration):
             name='StaffDeliver',
             fields=[
                 ('id', models.AutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('assigned_date', models.DateField(default=datetime_utils.date_time.DateTime.datenow)),
+                ('assigned_date', models.DateField(default=datetime_utils.date_time.DateTime('date').now())),
                 ('is_active', models.BooleanField(default=True)),
                 ('staff', models.OneToOneField(on_delete=django.db.models.deletion.CASCADE, to='staffs.staff')),
             ],

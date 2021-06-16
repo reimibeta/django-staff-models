@@ -6,7 +6,7 @@ from staff_models.staffs.class_models.staff import Staff
 
 class StaffSeller(models.Model):
     staff = models.OneToOneField(Staff, on_delete=models.CASCADE)
-    assigned_date = models.DateField(default=DateTime.datenow)
+    assigned_date = models.DateField(default=DateTime('date').now())
     # removed_date = models.DateField(blank=True, null=True)
     is_active = models.BooleanField(default=True)
 
