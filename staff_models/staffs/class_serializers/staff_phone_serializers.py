@@ -1,7 +1,7 @@
 from rest_flex_fields import FlexFieldsModelSerializer
 
 # product size serializer
-from rest_framework_utils.key_related_field import key_related_field
+from django_rest_framework.key_related_field import key_related_field
 
 from staff_models.staffs.class_models.staff import Staff
 from staff_models.staffs.class_models.staff_phone import StaffPhone

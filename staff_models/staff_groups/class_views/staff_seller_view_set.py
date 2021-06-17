@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from rest_framework import viewsets
-from rest_framework_utils.pagination import StandardResultsSetPagination
+from django_rest_framework.pagination import StandardResultsSetPagination
 
 from staff_models.staff_groups.class_models.staff_seller import StaffSeller
 from staff_models.staff_groups.class_serializers.staff_seller_serializers import StaffSellerSerializer
