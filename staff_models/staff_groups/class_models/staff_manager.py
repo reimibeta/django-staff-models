@@ -1,4 +1,4 @@
-from django_datetime.date_time import datetime
+from django_datetime.datetime import datetime
 from django.db import models
 
 from staff_models.staffs.class_models.staff import Staff
